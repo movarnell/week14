@@ -1,38 +1,60 @@
-.App {
+body {
   text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 22.5px;
+  font-weight: 700;
+	background: url(https://cdn.wallpapersafari.com/59/9/jdBCIz.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+	color: gold;
+  
+  
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.movie-app > .row {
+  position: relative;
+	overflow-x: auto;
+	flex-wrap: nowrap;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 600;
+  ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image-container {
+
+	position: relative;
+	transition: transform 0.2s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.image-container:hover {
+	cursor: pointer;
+	transform: scale(1.1);
 }
 
-.App-link {
-  color: #61dafb;
+.image-container:hover .overlay {
+	opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  font-size: 35px;
+}
+
+.title {
+  font-size: 25px;
+}
+
+.synopsisBox {
+  border: 2px gold;
+  padding: 10px;
+  margin:10pm;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.synopsis {
+  text-align: center;
+  max-width: 400px;
 }

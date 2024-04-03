@@ -1,0 +1,21 @@
+.stars {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .star {
+    color: white;
+    outline-color: black;
+    cursor: pointer;
+    border: black;
+    cursor: pointer;
+    -webkit-text-stroke-width: 2px;   
+    -webkit-text-stroke-color: black;  
+  }
+  
+  .star-filled {
+    border: black;
+    cursor: pointer;
+    color: gold;
+    
+  }
