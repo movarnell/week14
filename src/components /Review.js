@@ -2,6 +2,12 @@ import React from 'react';
 
 // Define a functional component Review which takes two props: review (an object containing review information) and onDelete (a function to delete a review)
 const Review = ({ review, onDelete }) => {
+
+// -------------------  NOTE  -------------------
+  //This variable stars is a string of filled stars based on the rating
+  let stars = "★".repeat(review.rating-1);
+// -------------------  NOTE  -------------------
+
   return (
     // Render a div with class name 'review'
     <div className="review">
@@ -9,8 +15,9 @@ const Review = ({ review, onDelete }) => {
       <div className="review-header">
         
         <span className="review-name">{review.name}</span>
-      
-        <span className="review-rating">{review.rating}</span>
+        
+      {/* I am adding a space and drawing out stars based off the numeric rating */}
+        <span className="review-rating"> {stars}</span>
       
         <span className="review-stars">★</span>
       </div>
